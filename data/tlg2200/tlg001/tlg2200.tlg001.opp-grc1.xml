@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+  <teiHeader xml:lang="eng">    
     <fileDesc>
-            <titleStmt><title>Libanius Opera</title>
+            <titleStmt>
+                <title xml:lang="lat">Epistulae 1-839</title>
+                <author>Libanius</author>
                 <sponsor>University of Leipzig</sponsor>
                 <funder>European Social Fund Saxony</funder>
                 <principal>Gregory Crane</principal>
@@ -47,7 +49,7 @@
       </titleStmt>
       <publicationStmt>
                 <authority>University of Leipzig</authority>
-                <idno type="filename">libanius_10.xml</idno>
+                <idno type="filename">tlg2200.tlg001.opp-grc1.xml</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
                 </availability>
@@ -60,32 +62,37 @@
                 <listBibl xml:lang="lat">
                     <biblStruct>
                         <monogr>
+                            <author ref="urn:cts:greekLit:tlg2200">Libanius</author>  
                             <editor>
                                 <persName>
                                     <name xml:lang="lat">Richardus Foerster</name>
-                                    <addName xml:lang="de">Richard Foerster</addName>
+                                    <addName xml:lang="deu">Richard Foerster</addName>
                                 </persName>
-                            </editor> 
-                            <author ref="http://data.perseus.org/catalog/http://data.perseus.org/catalog/urn:cts:greekLit:tlg2200">Libanius</author>  
-                            <title ref="http://data.perseus.org/catalog/http://data.perseus.org/catalog/urn:cts:greekLit:tlg2200.tlg001">Epistulae 1-839</title>
+                            </editor>                           
+                            <title type="main">Libanii Opera</title>
+                            <title type="subordinate">Epistulae 1-839</title>
+                            <edition>Editio stereotypis</edition>
                             <imprint>
                                 <publisher>Georg Olms Verlagsbuchhandlung</publisher>
                                 <pubPlace>Hildesheim</pubPlace>
-                                <date>1963</date>
+                                 <date>1963</date>
+                              </imprint>
+                            <imprint>
+                                <publisher>Teubner</publisher>
+                                <pubPlace>Leipzig</pubPlace>
+                                <date>1921</date>
+                                <biblScope unit="volume">10</biblScope>
                             </imprint>
-                            <biblScope unit="volume">10</biblScope>
                         </monogr>
-                        <ref target="https://archive.org/details/operarecensuitri10libauoft">Internet Archive</ref>
-                        
+                        <ref target="https://archive.org/details/operarecensuitri10libauoft">Internet Archive</ref>                        
                     </biblStruct>
                 </listBibl>
             </sourceDesc>
-            
         </fileDesc>
         <encodingDesc>
             <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-          <refsDecl n="CTS">
+            <refsDecl n="CTS">
         <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern n="letter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
@@ -100,7 +107,7 @@
 </teiHeader>
 
   <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg2200.tlg001.opp-grc1">
+    <body><div type="edition" n="urn:cts:greekLit:tlg2200.tlg001.opp-grc1" xml:lang="grc">
 <div type="textpart" subtype="letter" n="1">
 <pb n="1"/>
 <p>α'.</p> <note type="marginal">W 1</note>

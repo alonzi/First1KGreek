@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+  <teiHeader xml:lang="eng">    
     <fileDesc>
-      <titleStmt><title>CLAVDII PTOLEMAEI</title>
-        <editor>F. BOLL† ET Æ. BOER</editor>
+      <titleStmt><title xml:lang="lat">Apotelesmatica (= Tetrabiblos)</title>
+        <author xml:lang="lat">Claudius Ptolemaeus</author>
+        <editor>Franz Johannes Boll</editor>
+        <editor>Emilie Boer</editor>
         <sponsor>University of Leipzig</sponsor>
         <funder>European Social Fund Saxony</funder>
         <principal>Gregory Crane</principal>
@@ -50,7 +52,7 @@
       </titleStmt>
       <publicationStmt>
         <authority>University of Leipzig</authority>
-        <idno type="filename">TO BE ADDED BY LEIPZIG</idno>
+        <idno type="filename">tlg0363.tlg007.opp-grc2.xml</idno>
         <availability>
           <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
             License</p>
@@ -60,22 +62,27 @@
         <pubPlace>Germany</pubPlace>
       </publicationStmt>
       <sourceDesc>
-        <listBibl xml:lang="lat">
+        <listBibl>
           <biblStruct>
             <monogr>
-              <title>CLAVDII PTOLEMAEI</title>
+              <title xml:lang="lat">Claudii Ptolemaei opera quae exstant omnia</title>
               <editor>
                 <persName>
-                  <name xml:lang="lat">F. BOLL† ET Æ. BOER</name>
+                  <name>Franz Johannes Boll</name>
                 </persName>
               </editor>
-              <author ref="urn:tmp">F. BOLL† ET Æ. BOER</author>
+               <editor>
+                <persName>
+                  <name>Emilie Boer</name>
+                </persName>
+              </editor>
+              <author ref="urn:cts:greekLit:tlg0363" xml:lang="lat">Claudius Ptolemaeus</author>
               <imprint>
-                <publisher>IN AEDIBVS B.G. TEVBNERI</publisher>
-                <pubPlace>LIPSIAE</pubPlace>
-                <date>MCMLIV</date>
+                <publisher>B.G. Teubner</publisher>
+                <pubPlace>Leipzig</pubPlace>
+                <date>1954</date>
               </imprint>
-              <biblScope unit="volume">vol.</biblScope>
+              <biblScope unit="volume">3.1</biblScope>
             </monogr>
           </biblStruct>
         </listBibl>
@@ -83,7 +90,7 @@
     </fileDesc>
     <encodingDesc>
       <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-      <refsDecl n="CTS">
+        <refsDecl n="CTS">
         <cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
         <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
@@ -100,7 +107,7 @@
     </revisionDesc>
 </teiHeader>
   <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg0363.tlg007.opp-grc2">
+    <body><div type="edition" n="urn:cts:greekLit:tlg0363.tlg007.opp-grc2" xml:lang="grc">
 <pb n="xix"/>
 <head>KLAYΔIOY
 ΤΩΝ ΠΡΟΣ ΣΥΡΟΝ

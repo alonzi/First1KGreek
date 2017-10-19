@@ -2,8 +2,11 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
  <teiHeader>
+    
   <fileDesc>
-   <titleStmt><title>Commentaria in Aristotelem Graeca</title>
+   <titleStmt><title>In Aristotelis Sophisticos Elenchos Commentarius [Sp.]</title>
+    <author>Alexander of Aphrodisias</author>
+    <editor>Maximilian Wallies</editor>
     <sponsor>University of Leipzig</sponsor>
     <funder>European Social Fund Saxony</funder>
     <principal>Gregory Crane</principal>
@@ -72,8 +75,9 @@
         Aphrodisiensis</author>
        <title ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0732.tlgX01.opp-grc1">Quod
         fertur in Aristotelis sophisticos elenchos commentarium</title>
+       <title level="s">Commentaria in Aristotelem Graeca</title>
        <imprint>
-        <publisher>Berolini: Typis et Impensis G. Reimeri</publisher>
+        <publisher>Typis et Impensis G. Reimeri</publisher>
         <pubPlace>Berlin</pubPlace>
         <date>1898</date>
        </imprint>
@@ -90,7 +94,7 @@
   <encodingDesc>
    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
     Architecture.</p>
-   <refsDecl n="CTS">
+     <refsDecl n="CTS">
     <cRefPattern n="page" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
    </refsDecl>
   </encodingDesc>
@@ -104,7 +108,7 @@
  </teiHeader>
  <text>
   <body>
-   <div type="edition" n="urn:cts:greekLit:tlg0732.tlgX01.opp-grc1">
+   <div type="edition" n="urn:cts:greekLit:tlg0732.tlgX01.opp-grc1" xml:lang="grc">
     
      <head>ALEXANDRI QUOD FERTUR IN ARISTOTELIS SOPHISTICOS ELENCHOS COMMENTARIUM</head>
 

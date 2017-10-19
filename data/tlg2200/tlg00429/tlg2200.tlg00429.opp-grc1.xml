@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+  <teiHeader xml:lang="eng">    
     <fileDesc>
-            <titleStmt><title>Libanius Opera</title>
+            <titleStmt>
+                <title xml:lang="lat">Oratio 29</title>
+              <editor>Richard Foerster</editor>
+                <author>Libanius</author>
                 <sponsor>University of Leipzig</sponsor>
                 <funder>European Social Fund Saxony</funder>
                 <principal>Gregory Crane</principal>
@@ -47,7 +50,7 @@
       </titleStmt>
       <publicationStmt>
                 <authority>University of Leipzig</authority>
-                <idno type="filename">libanius_3.xml</idno>
+                <idno type="filename">tlg2200.tlg00429.opp-grc1.xml</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
                 </availability>
@@ -57,27 +60,26 @@
             </publicationStmt>
             
             <sourceDesc>
-                <listBibl xml:lang="lat">
-                    <biblStruct>
-                        <monogr>
-                            <editor>
-                                <persName>
-                                    <name xml:lang="lat">Richardus Foerster</name>
-                                    <addName xml:lang="de">Richard Foerster</addName>
-                                </persName>
-                            </editor> 
-                            <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2200">Libanius</author>  
-                            <title ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2200.tlg004">Orationes XXVI-L</title>
-                            <imprint>
-                                <publisher>In Aedibus B.G. Teubneri</publisher>
-                                <pubPlace>Lipsiae</pubPlace>
-                                <date>1906</date>
-                            </imprint>
-                            <biblScope unit="volume">3</biblScope>
-                        </monogr>
-                        <ref target="https://archive.org/details/operarecensuitri03libauoft">Internet Archive</ref>
-                        
-                    </biblStruct>
+                <listBibl>
+                   <biblStruct>
+    <monogr>
+        <editor>
+            <persName>
+                <name xml:lang="lat">Richardus Foerster</name>
+                <addName xml:lang="deu">Richard Foerster</addName>
+            </persName>
+        </editor> 
+        <author ref="urn:cts:greekLit:tlg2200">Libanius</author>  
+        <title xml:lang="lat">Orationes XXVI-L</title>
+        <imprint>
+            <publisher>B.G. Teubner</publisher>
+            <pubPlace>Leipzig</pubPlace>
+            <date>1906</date>
+        </imprint>
+        <biblScope unit="volume">3</biblScope>
+    </monogr>
+    <ref target="https://archive.org/details/operarecensuitri03libauoft">Internet Archive</ref>                       
+</biblStruct>
                 </listBibl>
             </sourceDesc>
             
@@ -85,7 +87,7 @@
         <encodingDesc>
             <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-          <refsDecl n="CTS">
+            <refsDecl n="CTS">
         <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
@@ -93,13 +95,15 @@
         <profileDesc>
             <langUsage>
                 <language ident="lat">Latin</language>
+              <language ident="grc">Greek</language>
+              <language ident="deu">German</language>
             </langUsage>
         </profileDesc>
         
 </teiHeader>
 
   <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg2200.tlg00429.opp-grc1">
+    <body><div type="edition" n="urn:cts:greekLit:tlg2200.tlg00429.opp-grc1" xml:lang="grc">
 
 <div type="textpart" subtype="chapter" n="1">
 <pb n="63"/>
